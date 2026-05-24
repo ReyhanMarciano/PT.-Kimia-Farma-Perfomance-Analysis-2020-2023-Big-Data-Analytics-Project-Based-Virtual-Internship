@@ -4,30 +4,36 @@ This is a Big Data Analytics Portfolio project that analyze Kimia Farma's perfor
 
 This portfolio project is the output of PT. Kimia Farma Big Data Analytics Project-Based Virtual Internship program with Rakamin Academy.
 
-# Tools & Technologies
+## Tools & Technologies
 * Google BigQuery SQL
 * CSV. Dataset
 * Google Data Studio (Looker)
 
-# Problem Statement 
+## Problem Statement 
 This project was driven by the company's need to evaluate business performance for the period 2020 to 2023. Currently, the primary challenge is integrating disparate data into a single, centralized source of information in Google BigQuery. This integration is essential for management to more accurately identify anomalies in branch performance.
 
-# Objective
+## Objective
 As a Big Data Analyst at PT Kimia Farma, this project aims to:
 * Evaluate Kimia Farma's business performance in-depth and comprehensively for the 2020 to 2023 period.
 * Integrate disparate data into a single, centralized dataset.
-* Identify branch performance, particularly the ratings for each branch
+* Identify branch performance, particularly the ratings for each branch.
 
-# Dataset
-There are 4 types of data that will be input into the dataset and used for analysis and dashboard creation. Data provided by Kimia Farma as part of the case study material. All of it uploaded to the dataset in BigQuery from .csv format
+## Dataset
+There are 4 types of data that will be input into the dataset and used for analysis and dashboard creation: 
+* kf_final_transaction
+* kf_inventory
+* kf_kantor_cabang
+* kf_product
 
-# The Process
-* Importing
-* Integration & Transformation
-* Calculating Gross Profit Percentage
-* Calculating Financial Matrics
+These data are provided by Kimia Farma as part of the case study material, the datas were uploaded to the dataset in BigQuery from .csv format.
 
-# Dashboard Feature
+## Processing
+* Importing, ingested four separate raw datasets into the BigQuery cloud data warehouse.
+* Integration & Transformation, merged the transactional fact table with the corresponding dimension tables using LEFT JOIN.
+* Calculating Gross Profit Percentage, applied conditional logic using CASE WHEN statement to map the gross profit margins progressively (ranging from 10% to 30%) based on the specified product price.
+* Calculating Financial Metrics, the key financial metrics are net sales and net profit. Net sales are calculated to determine the value of revenue after deducting discounts given to consumers, which are then multiplied by the previously determined gross profit percentage to obtain net profit.
+
+## Dashboard Feature
 * KPI Cards
 * Sales Over Time (Year)
 * Total Profit by Province
@@ -36,12 +42,12 @@ There are 4 types of data that will be input into the dataset and used for analy
 * Profit Contribution per Profit Tier
 * Top 5 Branch with High Branch Rating but Low Transaction Rating
 
-# Key Insight
+## Key Insight
 * Overall, the analysis for the 2020-2023 period shows that Kimia Farma has strong financial performance with total revenue of IDR 1.29 trillion. However, it is highly dependent on profits of products with 30% margin, which contribute 80% of the company's total profit.
 * Although West Java is the largest national sales contributor, there are still branches in other regions whose transaction service quality cannot match the superior physical facilities of the building.
 * Kimia Farma need to prioritize stock management on high-margin products, conduct service audits on anomalous branches, and begin more equitable market expansion outside Java.
 
-# Actionable Recomendation
+## Actionable Recomendation
 * Focus on maintaining and strengthening dominance in Java, particularly West Java, by optimizing and streamlining the supply chain and implementing customer loyalty programs to secure revenue streams.
 * Analysis of external factors related to annual sales fluctuations is necessary to prepare mitigation strategies for the coming year.
 * Retaining customers in West Java Province through a customer loyalty program.
@@ -51,5 +57,5 @@ There are 4 types of data that will be input into the dataset and used for analy
 * This requires a service audit and SOP check at problematic branches.
 * Evaluate stock and product availability at these branches, to mitigate low transaction ratings due to unavailable items, and provide retraining on customer excellence for staff at these branches
 
-# Documentation
+## Documentation
 ![Kimia Farma Performance Dashboard (2020-2023)](Image/Dashboard_Perfomance_Analytics_Kimia_Farma_Business_Year_2020-2023.jpg)
