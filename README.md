@@ -52,3 +52,4 @@ There are 4 types of data that will be input into the dataset and used for analy
 * Evaluate stock and product availability at these branches, to mitigate low transaction ratings due to unavailable items, and provide retraining on customer excellence for staff at these branches
 
 # Documentation
+![Kimia Farma Perfomrance Dashboard (2020-2023)](images/Dashboard_Perfomance_Analytics_Kimia_Farma_Business_Year_2020-2023.jpg)
